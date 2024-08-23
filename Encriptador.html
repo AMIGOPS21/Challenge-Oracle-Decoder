@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+        <button onclick="encryptText()">Encriptar</button>
+        <button onclick="decryptText()">Desencriptar</button>
+        
+        <div id="resultContainer">
+            <img id="placeholderImage" src="msje_no_encontrado.png" alt="Placeholder Image">
+            <textarea id="outputText" readonly style="display: none;" placeholder="Resultado..."></textarea>
+            <button id="copyButton" onclick="copyToClipboard()" style="display: none;">Copiar al Portapapeles</button>
+        </div>
+    </div>
+    <footer>
+        <p>Aplicación desarrollada por Karla Gómez G., 2024.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
